@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jevelin Burger Shop</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	<link rel="icon" type="image/gif" href="favicon.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+	<div class="home">
+		<header>
+			<div class="container">
+				<nav data-aos="fade" data-aos-duration="400">
+					<label><a href="#home"><img src="logo.png" alt="Jevelin" class="logo" draggable="false"></a></label>
+					<label><a href="#home"><img src="logo_dark.png" alt="Jevelin" class="logo-dark" draggable="false"></a></label>
+					<input type="checkbox" id="check" onclick="scrollHide()">
+					<label for="check" class="menu-btn">
+						<i class="fa-regular fa-bars"></i>
+					</label>
+					<img src="cart.png" alt="Bag" class="response-bag" draggable="false">
+					<div class="bag-badge-sticky"><span>7</span></div>
+					<ul>
+						<div class="menu-item">
+							<li><a href="#home" onclick="menuItem()">Home</a></li>
+							<li><a href="#about" onclick="menuItem()">About</a></li>
+							<li><a href="#offers" onclick="menuItem()">Offers</a></li>
+							<li><a href="#menu" onclick="menuItem()">Menu</a></li>
+							<li><a href="#trending" onclick="menuItem()">Trending</a></li>
+							<li><a href="#contact" onclick="menuItem()">Contact</a></li>
+						</div>
+						<div>
+							<img src="bag.png" alt="Bag" class="bag" draggable="false">
+							<img src="bag_dark.png" alt="Bag" class="bag-dark" draggable="false">
+							<div class="bag-badge"><span>7</span></div>
+							<i class="fa-solid fa-up"></i>
+						</div>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="header-content" id="home">
+			<div class="header-content-text">
+				<div class="line">
+					<img src="line1.png" alt="Line" class="line1" data-aos="fade-down" data-aos-duration="800" draggable="false">
+					<img src="line2.png" alt="Line" class="line2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200" draggable="false">
+					<img src="line3.png" alt="Line" class="line3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" draggable="false">
+				</div>
+				<p class="crispy">Crispy <span>Tender</span></p>
+			</div>
+			<p class="burger-text">Burger</p>
+			<div class="burger-box" data-aos="zoom-in" data-aos-duration="1000"></div>
+			<a href="#" class="home-see-more" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="700">See More</a>
+		</div>
+	</div>
+
+	<div class="testimonials about" id="about">
+		<div class="testimonials-img">
+			<img src="about.jpg" alt="About Us" draggable="false">
+		</div>
+		<div class="testimonials-text about-text" data-aos="zoom-in-left" data-aos-duration="700">
+			<div class="adv-block about-adv-block">About Us</div>
+			<h2>Delivering best ingredients for our trusty food lovers</h2>
+			<p>We are delivering the most fresh ingredients for our best customers. We choose ingredients like for ourselves. We will deliver your order at any time convenient for you.</p>
+			<span class="testimonials-name">Risus commodo viverra maecenas accumsan lacus lalala vel facilisis.</span>
+		</div>
+	</div>
+
+	<h2 class="offers-title" id="offers">Special offers</h2>
+	<div class="offers">
+		<div class="offers-big">
+			<div class="offer-adv-block">New in Town</div>
+			<img src="offer.jpg" alt="Sandwich" draggable="false">
+			<h2>Ham Sandwich</h2>
+			<div class="ingredient">
+				<div class="ingredient-item">fat 26g</div>
+				<div class="ingredient-item">sugars 34g</div>
+				<div class="ingredient-item">carbs 26g</div>
+			</div>
+			<p>The British Sandwich Association says that the ham sandwich is the most popular sandwich, and they conducted in 2001 saw ham as the second favourite filling behind cheese.</p>
+			<div class="sandwich-block">
+				<div class="sandwich-price">$14</div>
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+		<div class="offers-small">
+			<div class="offer-box box-distance">
+				<div class="offer-small-item">
+					<div class="offer-max">
+						<img src="offer1.jpg" alt="Offers" draggable="false">
+						<h2>Juicy Beef Burger Meal</h2>
+						<div class="trending-price offer-price">$16</div>
+						<a href="#" class="add-to-cart offer-add">Add to cart</a>
+					</div>
+				</div>
+				<div class="offer-small-item">
+					<div class="offer-max">
+						<img src="offer2.jpg" alt="Offers" draggable="false">
+						<h2>Choko Milkshake From Heaven</h2>
+						<div class="trending-price offer-price">$8</div>
+						<a href="#" class="add-to-cart offer-add">Add to cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="offer-box">
+				<div class="offer-small-item">
+					<div class="offer-max">
+						<img src="offer3.jpg" alt="Offers" draggable="false">
+						<h2>Blueberry Waffles</h2>
+						<div class="trending-price offer-price">$4</div>
+						<a href="#" class="add-to-cart offer-add">Add to cart</a>
+					</div>
+				</div>
+				<div class="offer-small-item">
+					<div class="offer-max">
+						<img src="offer4.jpg" alt="Offers" draggable="false">
+						<h2>Medium Portion of Fries</h2>
+						<div class="trending-price offer-price">$3</div>
+						<a href="#" class="add-to-cart offer-add">Add to cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mainMenu" id="menu">
+		<div class="mainMenu-img">
+			<img src="menu1.png" alt="Menu" draggable="false">
+		</div>
+		<div class="mainMenu-text" data-aos="zoom-in-left" data-aos-duration="700">
+			<div class="menu-adv-block">-25% OFF</div>
+			<h2>Enjoy our specially prepared burgers for you</h2>
+			<p>Dont miss out on our daily special offers</p>
+			<a href="#">See Menu</a>
+		</div>
+	</div>
+	<div class="sandwich">
+		<div class="mainMenu-text" data-aos="zoom-in-right" data-aos-duration="700">
+			<div class="menu-adv-block">-15% OFF</div>
+			<h2>New, amazing sandwich offers every day</h2>
+			<p>Just add some of our juicy side dishes</p>
+			<a href="#">See More</a>
+		</div>
+		<div class="sandwich-img">
+			<img src="menu2.png" alt="Menu" draggable="false">
+		</div>
+	</div>
+
+	<div class="dessert" id="trending">
+		<h2 class="trending-title trending-title-distance">Trending Burgers</h2>
+		<div class="dessert-content">
+			<div class="dessert-resp dessert-first-part">
+				<div class="dessert-item">
+					<div class="dessert-block">
+						<img src="trending1.jpg" alt="Dessert" draggable="false">
+						<h3>Mighty & Cheesy</h3>
+						<p>Take your burger experience on a whole other level.</p>
+						<div class="trending-buy">
+							<div class="trending-price">$15</div>
+							<a href="#" class="add-to-cart">Add to cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="dessert-item">
+					<div class="dessert-block">
+						<img src="trending2.jpg" alt="Dessert" draggable="false">
+						<h3>Smokin’ Cheese</h3>
+						<p>If you are sad, try our burger. It won’t break your Heart.</p>
+						<div class="trending-buy">
+							<div class="trending-price">$12</div>
+							<a href="#" class="add-to-cart">Add to cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dessert-resp dessert-second-part">
+				<div class="dessert-item">
+					<div class="dessert-block">
+						<img src="trending3.jpg" alt="Dessert" draggable="false">
+						<h3>The Epic Burger</h3>
+						<p>Down on the dumps? This burger will cheer you up.</p>
+						<div class="trending-buy buy-resp">
+							<div class="trending-price">$8</div>
+							<a href="#" class="add-to-cart">Add to cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="dessert-item">
+					<div class="dessert-block">
+						<img src="trending4.jpg" alt="Dessert" draggable="false">
+						<h3>Veganic Bun</h3>
+						<p>Helathy life means having a big, organic, juicy burger.</p>
+						<div class="trending-buy">
+							<div class="trending-price">$6</div>
+							<a href="#" class="add-to-cart">Add to cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="dessert">
+		<h2 class="trending-title block-distance">Dessert Menu</h2>
+		<div class="dessert-content">
+			<div class="dessert-resp dessert-first-part">
+				<div class="dessert-item">
+					<div class="dessert-block">
+						<img src="dessert1.jpg" alt="Dessert" draggable="false">
+						<h3>Strawberry Mix</h3>
+						<p>If you love Strawberries, this is your cake. This holds the top spot for our favorites</p>
+						<div class="trending-buy">
+							<div class="trending-price">$7</div>
+							<a href="#" class="add-to-cart">Add to cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="dessert-item">
+					<div class="dessert-block">
+						<img src="dessert2.jpg" alt="Dessert" draggable="false">
+						<h3>Chocolate Mix</h3>
+						<p>Having a bad day? Enjoy our New mix of chocolate ice cream with cup of coffee</p>
+						<div class="trending-buy">
+							<div class="trending-price">$3</div>
+							<a href="#" class="add-to-cart">Add to cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dessert-resp dessert-second-part">
+				<div class="dessert-item">
+					<div class="dessert-block">
+						<img src="dessert3.jpg" alt="Dessert" draggable="false">
+						<h3>Apple Pie</h3>
+						<p>New Super juicy Apple pies are waiting for you. Get your slice, before it ends</p>
+						<div class="trending-buy buy-resp">
+							<div class="trending-price">$5</div>
+							<a href="#" class="add-to-cart">Add to cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="dessert-item">
+					<div class="dessert-block">
+						<img src="dessert4.jpg" alt="Dessert" draggable="false">
+						<h3>Sunday Waffle</h3>
+						<p>Waffles are cooked until they become golden-brown, with a crispy outer texture.</p>
+						<div class="trending-buy">
+							<div class="trending-price">$4</div>
+							<a href="#" class="add-to-cart">Add to cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="testimonials">
+		<div class="testimonials-img">
+			<img src="testimonials.jpg" alt="Testimonials" draggable="false">
+		</div>
+		<div class="testimonials-text" data-aos="zoom-in-left" data-aos-duration="700">
+			<div class="adv-block">Testimonials</div>
+			<h2>What our clients have to say</h2>
+			<img src="quote.png" alt="Quote" draggable="false">
+			<p>This place was amazing for my gluten free allergies couldn’t have done enough. First time having a burger that tasted amazing and didn’t give me a  reaction</p>
+			<span class="testimonials-name">-John Doe</span>
+		</div>
+	</div>
+
+	<div class="gallery">
+		<div class="gallery-item" id="gallery1">
+			<img src="gallery1.jpg" alt="Burger" draggable="false">
+			<img src="gallery2.jpg" alt="Burger" draggable="false">
+		</div>
+		<div class="gallery-item">
+			<img src="gallery3.jpg" alt="Burger" draggable="false">
+			<img src="gallery4.jpg" alt="Burger" draggable="false">
+		</div>
+	</div>
+
+	<footer id="contact">
+		<div class="container">
+			<div class="row contact-row">
+				<div class="socials col-12 col-lg-4">
+					<img src="logo_dark.png" alt="Jevelin" draggable="false">
+					<p>It’s burger time. Yes, the burger is the best snack when people feel hungry and want to have some tasty food.</p>
+					<a href="https://www.instagram.com/" class="instagram">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a href="https://www.facebook.com/" class="facebook">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+					<a href="https://twitter.com/?lang=ru" class="twitter">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+				</div>
+
+				<div class="contact-us col-12 col-md-6 col-lg-4">
+					<h3 class="contact-title">Contact us</h3>
+					<div class="margin-top-25">	
+						<img src="geo.png" alt="Geolocation" draggable="false">
+						<p>City Hall Park, New York</p>
+					</div>
+					<div>
+						<img src="phone.png" alt="Telephone" id="phone" draggable="false">
+						<p>(647) 346-3241</p>
+					</div>
+					<div>
+						<img src="mail.png" alt="Mail" draggable="false">
+						<p>email@jevelinburger.com</p>
+					</div>
+					<div>
+						<img src="mail.png" alt="Mail" draggable="false">
+						<p>email2@jevelinburger.com</p>
+					</div>
+				</div>
+
+				<div class="subscribe col-12 col-md-6 col-lg-4">
+					<h3 class="contact-title">Subscribe</h3>
+					<input type="email" name="email" placeholder="Enter your email here..." class="email-input">
+					<input type="submit" value="SUBSCRIBE" class="subscribe-button">
+					<p>Get the latest special offers</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<iframe src="https://my.atlistmaps.com/map/fa5c7f36-a197-4828-9135-a7d9bd88b29d?share=true" allow="geolocation" scrolling="no" allowfullscreen></iframe>
+	<button id="myBtn" onclick="topFunction()"><i class="fa-solid fa-angle-up"></i></button>
+
+	<script src="script.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://kit.fontawesome.com/bbf798ce9b.js"></script>
+	<script>
+		AOS.init({
+			once: true,
+		});
+		AOS.init({
+			disable: function() {
+				var maxWidth = 800;
+				return window.innerWidth < maxWidth;
+			}
+		});
+	</script>
+</body>
+</html>
